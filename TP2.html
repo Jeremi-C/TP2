@@ -1,0 +1,138 @@
+<!--
+nom: Jérémi Chrétien
+date: 9/11/2021
+TP2
+but: Page web qui affiche un menu hiérarchique
+note: J'ai du défaire des sélecteurs id de li parce qu'il rentrait en conflit avec mes liens.
+      Je voulais que le lien prenne toute la boite pour faire comme un bouton comme dans intro menus.html
+      et la seul manière était de rendre certain li non-boite, ainsi, le sélecteur li a du partir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<style>
+    body {
+        background-image: url('images/Fond.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="titre">Favoris</div> 
+    <ul class="menu">
+        <li class="box_ui box_color"><img class="icon" src="images/music_icon.png" alt=">">
+            Musiques
+            <img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+            <ul class="sous_menu">
+                <li class="box_ui box_color">Rock</li>
+                <li class="box_ui box_color">Jazz<img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+                    <ul class="sous_menu">
+                        <li class="box_ui box_color">Pat Metheny</li>
+                        <li class="box_ui box_color">Miles Davis</li>
+                        <li class="box_ui box_color">UZEB<img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+                            <ul class="sous_menu">
+                                <li class="box_ui box_color">Alain Caron</li>
+                                <li class="box_ui box_color">Michel Cusson</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box_ui box_color">Latin</li>
+                <li class="box_ui box_color">Blues</li>
+                <li class="box_ui box_color">Metal</li>
+                <li class="box_ui box_color">Classic</li>
+                <li class="box_ui box_color">Folk</li>
+            </ul>
+        </li>
+        <li class="box_ui box_color"><img class="icon" src="images/news_icon.png" alt=">">
+            Nouvelles
+            <img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+            <ul class="sous_menu">
+                <li>
+                    <a class="box_ui box_color" href="https://ici.radio-canada.ca/"target="_blank">
+                        <img class="icon" src="images/radio_canada_icon.png" alt=">">Radio-canada
+                    </a>
+                </li>
+                <li>
+                    <a class="box_ui box_color" href="https://www.nbc.com/"target="_blank">
+                        <img class="icon" src="images/nbc_icon.png" alt=">">NBC news
+                    </a>
+                </li>
+                <li>
+                    <a class="box_ui box_color" href="https://www.cnn.com/"target="_blank">
+                        <img class="icon" src="images/cnn_icon.png" alt=">">CNN news
+                    </a>
+                </li>
+                <li class="box_ui box_color"><img class="icon" src="images/meteo_icon.png" alt=">">
+                    Météo
+                    <img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+                    <ul class="sous_menu">
+                        <li>
+                            <a class="box_ui box_color" href="https://www.meteomedia.com/ca/meteo/quebec/sainte-therese"target="_blank">
+                                <img class="icon" src="images/meteo_media_icon.png" alt=">">Météomédia
+                            </a>
+                        </li>
+                        <li>
+                            <a class="box_ui box_color" href="https://www.nhc.noaa.gov/"target="_blank">
+                                <img class="icon" src="images/Hurricane_icon.png" alt=">">Ouragan
+                            </a>
+                        </li>
+                        <li>
+                            <a class="box_ui box_color" href="https://www.wunderground.com/wundermap/"target="_blank">
+                                <img class="icon" src="images/wunder_icon.png" alt=">">Wunder Ground
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="box_ui box_color"><img class="icon" src="images/game_icon.png" alt=">">
+            Jeux
+            <img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+            <ul class="sous_menu">
+                <li>
+                    <a class="box_ui box_color" href="https://zone.msn.com/en/backgammon/default.htm"target="_blank">
+                        <img class="icon" src="images/backgammon_icon.png" alt=">">Backgammon
+                    </a>
+                </li>
+                <li>
+                    <a class="box_ui box_color" href="https://www.mah-jongg.ch/reversi/reversi.html"target="_blank">
+                        <img class="icon" src="images/reversi_icon.png" alt=">">Reversi
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="box_ui box_color"><img class="icon" src="images/contact_icon.png" alt=">">
+            Contacts
+            <img class="avec_sous_menu" src="images/ICON_submenu.png" alt=">">
+            <ul class="sous_menu">
+                <li>
+                    <a class="box_ui box_color" href="https://www.facebook.com/"target="_blank">
+                        <img class="icon" src="images/facebook_icon.png" alt=">">Facebook
+                    </a>
+                </li>
+                <li>
+                    <a class="box_ui box_color" href="https://twitter.com/"target="_blank">
+                        <img class="icon" src="images/twitter_icon.png" alt=">">Twitter
+                    </a>
+                </li>
+                <li>
+                    <a class="box_ui box_color" href="https://accounts.google.com/"target="_blank">
+                        <img class="icon" src="images/google_plus_icon.png" alt=">">Google+
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
